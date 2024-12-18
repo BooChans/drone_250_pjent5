@@ -69,7 +69,7 @@ try:
             
             elif msg.get_type() == 'GPS_RAW_INT':
                 # On écrit la ligne avec les données GPS
-                new_line = f"lattitude : {msg.lat}, longitude : {msg.lon}, altitude : {msg.alt}"
+                new_line = f"date : {date}, lattitude : {msg.lat}, longitude : {msg.lon}, altitude : {msg.alt}"
 
                 # On spécifie le nom du fichier dans lequel on veut écrire les coordonnées GPS
                 file_name = "GPS_coordinates.txt"
